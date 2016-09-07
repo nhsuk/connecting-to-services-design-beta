@@ -1,0 +1,49 @@
+{% extends 'templates/nhs_template.html' %}
+
+{% block banner %}
+
+{% include "includes/nhs.uk/banner_this_is_new_page.html" %}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}Test pages for NHS.UK{% endblock %}
+
+
+{% block content %}
+<h1>Example h1</h1>
+
+<h2>Example h2</h2>
+
+<h3>Example h3</h3>
+
+<h4>Example h4</h4>
+
+<p>This is content.</p>
+
+<p>Here is a piece of content with <i>some italics</i>, <b>some strong type</b>, and <a href="">a link that goes nowhere</a>.</p>
+
+<p>You want a bullet list?
+
+  <ul>
+    <li>Here is a list</li>
+    <li>of bullet points</li>
+    <li>to peruse</li>
+  </ul>
+
+  <ol>
+    <li>And</li>
+    <li>One by one</li>
+    <li>Here's a numbered list</li>
+  </ol>
+
+</p>
+
+<form>
+
+Form stuff to go here.
+
+</form>
+
+{% endblock %}

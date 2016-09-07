@@ -1,0 +1,435 @@
+// Add "tint" and "shade" mixins
+
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}
+
+// Import GOV.UK frontend toolkit
+@import "colours";
+@import "device-pixels";
+@import "measurements";
+@import "conditionals";
+@import "shims";
+//@import "typography";
+@import "grid_layout";
+@import "css3";
+@import "design-patterns/buttons";
+
+// Import GOV.UK elements
+
+@import "elements/helpers";
+@import "elements/reset";
+//@import "elements/typography";
+@import "elements/layout";
+@import "elements/forms";
+@import "elements/tables";
+@import "elements/buttons";
+@import "elements/details";
+//@import "elements/lists";
+@import "elements/panels";
+@import "elements/icons";
+@import "elements/utilities";
+@import "elements/cards";
+
+
+// Import modules
+
+@import "modules/shame";
+@import "modules/for-elements";
+@import "modules/form-navigation";
+@import "modules/other-specify";
+@import "modules/radios-and-checkboxes";
+//@import "modules/auto-suggest";
+@import "modules/select-boxes";
+@import "modules/guide_navigation";
+@import "modules/page_meta";
+@import "modules/breadcrumbs";
+
+// NHS.UK Template
+
+@import "modules/nhs-template";
+
+// NHS "Sassline" based typography
+@import "typography/variables";
+@import "typography/modular-scale";
+@import "typography/mixins";
+@import "typography/typography";
+
+// Default content stuff
+
+.markdown-content {
+  h1 { @extend .heading-large; }
+  h2 { @extend .heading-medium; }
+  h3 { @extend .heading-small; }
+
+  ul { @extend .list-bullet; }
+  ol { @extend .list-number; }
+}
+
+
+//
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+//
+
+
+.notice-trans {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: none;
+  border: 14px solid $nhs-light-blue;
+  color: $black;
+  font-size:18px;
+  line-height:2rem;
+}
+
+
+.notice-green {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: $nhs-light-green;
+  border-left: 14px solid $nhs-green;
+  color: $white;
+  font-size: 18px;
+  line-height:2rem;
+}
+
+.notice-green p, .notice-green a, .notice-green h2, .notice-green h3 {
+  color: $white;
+}
+
+.notice-green a {
+  font-weight: 800;
+}
+
+
+.notice-orange {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: $nhs-orange;
+  border-left: 3px solid $nhs-red;
+  color: $black;
+  font-size:18px;
+  line-height:2rem;
+}
+
+.notice-blue {
+  padding: 18px;
+  margin: 0 0 18px 0;
+	background: $nhs-light-blue;
+  border-left: 3px solid $nhs-black;
+  color: $white;
+  font-size:18px;
+  line-height:2rem;
+}
+
+.notice-blue a {
+  color: $white;
+}
+
+.alert-blue {
+  margin: 20px 0;
+  padding: 18px;
+	background: $nhs-light-blue;
+  color: $white;
+  line-height:2rem;
+}
+
+.alert-blue p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-blue a {
+  color: $white;
+  font-weight: 400;
+}
+
+
+.alert-orange {
+  margin: 20px 0;
+  padding: 18px;
+	background: $nhs-orange;
+  color: $black;
+  line-height:2rem;
+}
+
+.alert-orange p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-orange a {
+  color: $black;
+  font-weight: 400;
+}
+
+
+.alert-trans {
+  margin: 20px 0;
+  padding: 18px;
+	background: none;
+  color: $black;
+  line-height:2rem;
+}
+
+.alert-trans p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-trans a {
+  color: $black;
+  font-weight: 400;
+}
+
+
+.alert-grey {
+  margin: 0 0 18px 0;
+  padding: 18px;
+	background: #cccccc;
+  color: $black;
+  line-height:2rem;
+}
+
+.alert-grey p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.alert-grey a {
+  color: $black;
+  font-weight: 400;
+}
+
+
+.alert-green {
+  margin: 20px 0;
+  padding: 18px;
+	background: $nhs-light-green;
+  color: $white;
+  line-height:2rem;
+}
+
+
+ul.notice {
+	padding: 18px;
+  padding-top:24px;
+  margin: 36px 0px;
+	background: #fffab3;
+  border-left: 3px solid #FCDF03;
+  font-size:1.5rem;
+  line-height:2rem;
+  color:#333;
+	max-width: 612px;
+}
+
+ul.alternatives {
+	padding-left: 18px;
+
+}
+
+.notice-green h2.subhead {
+	color:#009933;
+}
+
+.notice-red li {
+	 color:#333;
+	     margin-top: 15px;
+		 max-width: 612px;
+}
+
+.notice-green li {
+	 color:black;
+	 margin-top: 15px;
+	 max-width: 612px;
+}
+
+
+details summary:focus {
+    outline:none !important;
+}
+
+.callout.link-box {
+    padding-left: 18px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+// GP opening times table override style
+table.gpOpeningTimes {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table.gpOpeningTimes th {
+    font-weight: 700;
+}
+
+table.gpOpeningTimes th {
+    padding: 1.5em 0.5em 0.75em 0;
+}
+
+table.gpOpeningTimes td {
+    padding: 0.75em 0.5em 0.75em 0;
+}
+
+table.gpOpeningTimes td,
+table.gpOpeningTimes th {
+    font-size: 1.5rem;
+    margin: 1em 0 2em;
+    text-align: left;
+    vertical-align: top;
+    text-align: left;
+}
+
+table.gpOpeningTimes tr {
+    border-bottom: solid 1px #bfc1c3;
+}
+
+.important {
+    display: block;
+    font-weight: 600;
+    background: url(/public/images/icon-important-2x.png) 0px 0px / 25px 25px no-repeat;
+    margin-left: 0px;
+    padding: 0px 0px 0px 40px;
+}
+
+.alert {
+    display: block;
+    font-weight: 600;
+    background: url(/public/images/icon-important-2x.png) 0px 14px / 25px 25px no-repeat;
+    padding: 0px 0px 0px 40px;
+}
+
+
+a.another-gp-white{
+  &:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 6px solid transparent;
+    left: 6px;
+    border-right-color: $white;
+
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);
+  }
+}
+
+a.another-gp-black{
+  &:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 6px solid transparent;
+    left: 6px;
+    border-right-color: $black;
+
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);
+  }
+}
+
+
+.contact-label {
+  margin-top: 16px;
+  margin-bottom: -16px;
+  font-weight: 800;
+}
+
+.contact-info {
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.seegp {
+  border-style: solid;
+  border-width: 14px;
+  border-color: $nhs-light-blue;
+  background: white;
+  color: $black;
+  padding: 28px;
+}
+
+.gotoservice {
+  border-style: solid;
+  border-width: 14px;
+  border-color: $nhs-light-green;
+  background: $white;
+  color: $black;
+  padding: 28px;
+  margin-bottom: 18px;
+}
+
+// Tertiary go to service CTA buttons (NHS light green)
+.gotoservice-cta {
+  background-color: $nhs-light-green;
+  border-color: $nhs-light-green;
+  border-width: 2px;
+  color: $white;
+
+  // height: 3rem;
+  line-height: 2rem;
+
+  // font-size: 16px;
+  font-weight: bold;
+
+  // padding-right was 2.5rem
+  padding-right: 7.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  background-image: url("/public/images/icon-button-start.svg");
+  background-repeat: no-repeat;
+  background-position: 98.5% 57.5%;
+
+  @include media(mobile) {
+      // Change width of link to fill whole viewport (within borders obvs)
+
+  }
+
+
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited{
+    color: $white;
+    background-color: $nhs-light-green;
+  }
+}
+
+.nineninenine {
+  background: $nhs-red;
+  color: $white;
+}
+
+.conditionContainer {
+  width: 45%;
+  float: left;
+  margin: 0px 10px 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 114, 198, 0.1);
+}
+
+
+.conditionImage {
+  width: 100%;
+}
