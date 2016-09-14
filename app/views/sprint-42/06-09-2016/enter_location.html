@@ -1,0 +1,45 @@
+{% extends 'templates/nhs_q_and_a.html' %}
+
+{% block banner %}
+
+{% include "includes/nhs.uk/banner_this_is_new_page.html" %}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}Enter a location{% endblock %}
+
+{% block pageIntro %}
+No intro
+{% endblock %}
+
+
+{% block content %}
+<form method="get" class="form" action="open_services">
+
+<div class="form-item-wrapper">
+<div class="form-group">
+<label class="form-label-bold" for="postcode">
+<!-- label -->
+</label>
+
+<input type="text" id="postcode" name="postcode" value="" class="form-control">
+</div>
+</div>
+
+
+
+<div class="form-item-wrapper">
+<div class="form-group">
+
+<input type="submit" class="button" value="Continue">
+
+
+</div>
+</div>
+
+
+</form>
+
+{% endblock %}

@@ -1,7 +1,9 @@
 ## NHS.UK Beta
 # Connecting to services in-browser design work
 
-This repo is for the design work for the nhs.uk beta work looking at connecting to services.
+This repo is for the design work for the nhs.uk beta work looking at connecting to services. To see it in action have a look at its [Heroku instance](http://cts-design-beta.herokuapp.com/)
+
+Previous work on the service was done using the Alpha styling and kit. Github repo here. [Heroku instance here](http://connecting-to-services-design.herokuapp.com/).
 
 ## Tech driving this work
 
@@ -61,7 +63,7 @@ This will install folders containing programs described by the package.json file
 node start.js
 ```
 
-Go to [localhost:3000](http://localhost:3000) in your browser.
+Go to [localhost:5000](http://localhost:5000) in your browser.
 
 #### Hot reload
 

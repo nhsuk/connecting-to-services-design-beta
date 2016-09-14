@@ -1,4 +1,4 @@
-{% extends 'templates/nhs_template.html' %}
+{% extends 'templates/nhs_twothirds_onethird.html' %}
 
 {% block banner %}
 
@@ -11,11 +11,21 @@
 
 
 {% block content %}
-<h2>Sprint 42</h2>
+
+
+<h2 class="heading-medium">Sprint 42</h2>
+
+<p><strong>Tuesday 6 September to Tuesday 21 September</strong></p>
 
 <ul>
   <li><a href="sprint-42/06-09-2016/symptoms_stomach_ache">Stomach ache page</a>, and the start of the journey (currently goes to the second page only)</li>
   <li><a href="sprint-42/06-09-2016/demo-page">Demo page</a>, for getting all the beta style into place on this prototype kit</li>
 </ul>
+
+{% endblock %}
+
+{% block rightcolumn %}
+
+<a href="https://github.com/nhsuk/connecting-to-services-design">Repo of this work on Github</a>
 
 {% endblock %}

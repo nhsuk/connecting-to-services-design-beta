@@ -1,0 +1,204 @@
+{% extends 'templates/nhs_q_and_a.html' %}
+
+{% block banner %}
+
+{% include "includes/nhs.uk/banner_this_is_new_page.html" %}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}Full details about {service}{% endblock %}
+
+{% block pageIntro %}
+
+Intro?
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+
+    <div class="grid-row">
+      <div class="column-half">
+        <div class="contact-label">Address</div>
+        <h2 class="heading-medium">101 Windy Lane<br />
+          Ambridge<br />
+          West Yorkshire<br />
+          LS35 0XY</h2>
+
+          <a class="link" href="https://www.google.co.uk/maps/place/Devonshire+Ave,+Leeds,+West+Yorkshire+LS8+1AY/@53.8433464,-1.5154174,17z/data=!3m1!4b1!4m2!3m1!1s0x48795ba4c4865f53:0x88630d5f1ae46082" target="_blank">View on a map and get directions</a> (opens another window)
+        </p>
+    </div>
+    <div class="column-half">
+      <div class="contact-label">Reception telephone</div>
+      <div class="contact-info">01234 5678901</div>
+      <div class="contact-label">Surgery website</div>
+      <div class="contact-info"><a href="">www.surgerywebsite.com</a></div>
+      <div class="contact-label">Fax number</div>
+      <div class="contact-info">01234 1098765</div>
+
+    </div>
+  </div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="notice-trans" role="note" aria-label="Information">
+            <h2 class="heading-medium">Reception is open now, until 6pm today</h2>
+
+            <h3 class="heading-small"><a href="http://nhsalpha.herokuapp.com/book-an-appointment/next-available-appointment">Book an appointment online</a> or call reception on <a href="">01234 5678901</a></h3>
+          </div>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+      <div class="column-two-thirds">
+
+
+    <details role="group">
+        <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="false">
+            <span>View all reception times</span>
+        </summary>
+        <div id="details-content-3" aria-hidden="true">
+
+
+            <h3 class="heading-medium">Reception open times</h2>
+
+
+            <table class="gpOpeningTimes">
+                <tbody>
+                    <tr>
+                        <td class="left60">Monday</td>
+                        <td class="right">8am to 6pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Tuesday</td>
+                        <td class="right40">8am to 8.30pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Wednesday</td>
+                        <td class="right">8am to 6pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Thursday</td>
+                        <td class="right">8am to 6pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Friday</td>
+                        <td class="right">8am to 5pm</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Saturday</td>
+                        <td class="right40">Closed</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Sunday</td>
+                        <td class="right40">Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p></p>
+
+            <h3 class="heading-medium">Upcoming days this practice will also be closed</h2>
+
+            <table class="gpOpeningTimes">
+                <!--  <thead>
+    <tr>
+      <th colspan=2>Days this practice will also be closed</th>
+    </tr>
+  </thead>-->
+                <tbody>
+                    <tr>
+                        <td class="left60">Monday 20 June 2016</td>
+                        <td class="right">Training day</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Monday 11 July 2016</td>
+                        <td class="right">Training day</td>
+                    </tr>
+                    <tr>
+                        <td class="left60">Monday 29 August 2016</td>
+                        <td class="right">Bank holiday</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <summary class="more-info" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="false">Close</summary>
+        </div>
+
+    </details>
+
+    <p></p>
+
+  </div>
+</div>
+
+<div class="grid-row" style="margin-top: 26px;">
+    <div class="column-half">
+
+  <h2 class="heading-medium">Services offered {available?}</h2>
+  <ul class="list-bullet">
+      <li>doctor</li>
+      <li>nurse</li>
+      <li>asthma clinic</li>
+  </ul>
+
+    </div>
+
+    <div class="column-half">
+
+  <h2 class="heading-medium">Online services</h2>
+  <ul class="list-bullet">
+      <li>appointment with doctor</li>
+      <li>appointment with nurse</li>
+      <li>request repeat perscription</li>
+  </ul>
+  <a href="http://nhsalpha.herokuapp.com/book-an-appointment/next-available-appointment" class="button button-secondary-cta">Access</a>
+    <p><a href="http://nhsalpha.herokuapp.com/change-or-cancel-an-appointment/start">Change or cancel an existing appointment</a></p>
+
+    </div>
+
+
+</div>
+
+
+<div class="grid-row" style="margin-top: 26px;">
+
+<div class="column-two-thirds">
+
+  <div class="alert-trans" role="note" aria-label="Information">
+    <div class="important">
+    <h2 class="heading-medium">Surgery currently not accepting new patients</h2>
+      <a class="another-gp-black" href="http://nhsalpha.herokuapp.com/register-with-a-gp/find-a-gp">Find other GP Practices in the area</a>
+  </div>
+
+
+</div>
+
+</div>
+
+
+  </div>
+
+  </div>
+
+  <div class="column-one-third">
+
+    <p>Pharmacists are highly trained health professionals. They are experts in medicines and will use their clinical expertise, together with their practical knowledge to advise you on common problems such as coughs, colds, aches and pains, as well as healthy eating and stopping smoking.</p>
+
+    <p><a href="http://www.nhs.uk/NHSEngland/AboutNHSservices/pharmacists/Pages/pharmacistsandchemists.aspx">Read more about pharmacies</a></p>
+
+
+  </div>
+
+</div>
+
+
+{% endblock %}

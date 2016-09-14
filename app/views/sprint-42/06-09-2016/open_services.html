@@ -1,0 +1,104 @@
+{% extends 'templates/nhs_q_and_a.html' %}
+
+{% block banner %}
+
+{% include "includes/nhs.uk/banner_this_is_new_page.html" %}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}Places near to {postcode}{% endblock %}
+
+{% block pageIntro %}
+The places listed below are currently open. Other services nearby are closed. These places can help you with
+
+  <ul>
+    <li>This thing</li>
+  </ul>
+
+  because we have done the hard work to make it simpler for you.
+  {% endblock %}
+
+
+{% block content %}
+
+<table>
+
+  <tr>
+    <td colspan=2><span style="font-size: 18px; font-weight: 400;">Pharmacy</span></td>
+  </tr>
+
+  <tr>
+    <td width="50%"><span style="font-size: 24px; font-weight: 800;"><a href="service_details">MJ Moonwalker</a></span>
+      <p>7 Windy Lane, Idle, Bradford, BD10 9RY<br />
+                        Telephone 01234 1234567</p>
+
+      <p><strong>Open today until 5.30pm</strong></p>
+<!--
+      <p>Services offered:
+        <ul class="list-bullet">
+          <li>Telephone appointments</li>
+          <li>Consultation by booking an appointment in advance</li>
+          <li>Turn up consultation</li>
+        </ul>
+      </p>
+-->
+
+    </td>
+    <td width="50%">Distance: 0.3 miles<br /><a href="https://www.google.com/maps/dir/42+Harper+Crescent,+Bradford+BD10+9RY,+UK/53.8335,-1.7295/@53.8361656,-1.7319263,16z/" class="button button-secondary-cta">See on map and get directions</a><br />
+</td>
+  </tr>
+  <tr>
+    <td>
+</td>
+  </tr>
+
+
+  <tr>
+    <td colspan=2><hr></td>
+  </tr>
+
+  <tr>
+    <td colspan=2><span style="font-size: 18px; font-weight: 400;">Pharmacy</span></td>
+  </tr>
+
+  <tr>
+    <td width="50%"><span style="font-size: 24px; font-weight: 800;"><a href="service_details">Lloyds Pharmacy</a></span>
+      <p>137 High Street, Bradford BD10 3WV<br />
+                        Telephone 01234 7654321</p>
+
+      <p><strong>Open today until 5pm.<br />
+        Closes soon in 1 hour.</strong></p>
+<!--
+      <p>Services offered:
+        <ul class="list-bullet">
+          <li>Telephone appointments</li>
+          <li>Consultation by booking an appointment in advance</li>
+          <li>Turn up consultation</li>
+        </ul>
+      </p>
+-->
+
+    </td>
+    <td width="50%">Distance: 1.1 miles<br /><a href="https://www.google.com/maps/dir/42+Harper+Crescent,+Bradford+BD10+9RY,+UK/53.8335,-1.7295/@53.8361656,-1.7319263,16z/" class="button button-secondary-cta">See on map and get directions</a><br />
+</td>
+  </tr>
+  <tr>
+    <td>
+</td>
+  </tr>
+
+
+
+
+</table>
+
+<p></p>
+<div class="grid-row">
+  <div class="column-two-thirds">
+<p><a href="services_full_results"  class="gotoservice-cta">See all nearby places that can help, open or closed</a></p>
+</div>
+</div>
+
+{% endblock %}

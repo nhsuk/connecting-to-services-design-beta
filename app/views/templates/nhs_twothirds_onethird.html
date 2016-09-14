@@ -77,24 +77,37 @@
       <div class="local-header--inner">
         <h1 class="local-header--title">{% block pageTitle %}{% endblock %}</h1>
 
-        <div class="local-header--intro">
-            <p>{% block pageIntro %}{% endblock %}</p>
-        </div>
-
-
       </div>
     </div>
 
 
 
     <div class="page-section">
-      <div class="reading-width">
+      <div class="grid-row">
 
-  {% block content %}{% endblock %}
+        <div class="column__two-thirds">
+          <div class="reading-width">
 
-      </div>
+            {% block content %}{% endblock %}
+
+
+          </div>
+        </div>
+
+        <div class="column__one-third-right">
+          <div class="reading-width">
+
+    <section class="callout callout__alert callout__overlap" id="emergency-info">
+
+    {% block rightcolumn %}{% endblock %}
+    
+    </section>
+
     </div>
+  </div>
 
+  </div>
+  </div>
 
 
 
