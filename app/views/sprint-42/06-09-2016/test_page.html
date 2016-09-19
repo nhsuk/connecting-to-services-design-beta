@@ -1,0 +1,44 @@
+{% extends 'templates/nhs_q_and_a.html' %}
+
+{% block banner %}
+
+{% include "includes/nhs.uk/banner_this_is_new_page.html" %}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}Find a place that can help with{% endblock %}
+
+{% block pageIntro %}
+<ul>
+  <li>treating headaches at home</li>
+</ul>
+{% endblock %}
+
+
+{% block content %}
+
+<h2 class="heading-medium">
+  Do you already have a personal user account?
+</h2>
+
+<form>
+  <fieldset class="inline">
+
+    <legend class="visuallyhidden">Do you already have a personal user account?</legend>
+
+    <label class="block-label" for="radio-inline-1">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+      Yes
+    </label>
+    <label class="block-label" for="radio-inline-2">
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+      No
+    </label>
+
+  </fieldset>
+</form>
+
+
+{% endblock %}

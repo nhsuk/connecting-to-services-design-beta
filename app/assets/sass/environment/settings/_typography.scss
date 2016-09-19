@@ -8,6 +8,7 @@ $baseline-grid-unit: 4px;
 $default-spacing-unit: $baseline-grid-unit * 4;
 $measure: 40em; // comfy reading width of ~ 55-65 characters
 
+
 $type-settings-map: (
   16: -1,
   20: 0,
@@ -103,3 +104,32 @@ $type-settings: (
     ),
   ),
 );
+
+
+//
+// bits borrowed from govuk to merge in form-section
+//
+
+@mixin core-19() {
+
+  @include core-font(24);
+
+//  $font-size: 19px;
+//  $font-size-640: 16px;
+//  $font-size-print: 14pt;
+}
+
+@mixin bold-19() {
+
+  @include bold-font(24);
+
+//  $font-size: 19px;
+//  $font-size-640: 16px;
+//  $font-size-print: 14pt;
+}
+
+
+// set font colour to match govuk borrowed elements
+$text-colour: $black;
+$secondary-text-colour: $blue;
+//
